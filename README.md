@@ -4,6 +4,8 @@ A simple web application created with React and the public OpenTable API that di
 When a user running the application submits a city (e.g. Toronto), an extensive list of restaurants that are currently available
 will be displayed. Please note that OpenTable API fetches data only from North America and so this app is solely functional for NA.
 
+![RestoFinder](./RestoFinder.png?raw=true "RestoFinder Screenshot")
+
 To install the project:
 
 ### `npm install`
