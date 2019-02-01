@@ -1,39 +1,47 @@
-@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Dancing+Script');
 
 .App {
   text-align: center;
   margin-top: -20px;
-  font-family: Oxygen;
+  font-family: 'Oxygen';
 }
 
 .location-container {
   height: 28em;
-  background: url("../location-container-background.jpg");
+  background: url("../location-container-background.jpg") top;
   background-size: 100%;
   opacity: 0.85;
+  position: relative;
 }
 
-@media screen and (max-width: 728px) {
-  .location-container {
-    background-size: cover;
-  }
+.location-container_logo {
+  position: absolute;
+  top: 2em;
+  left: 3.2em;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: 'Dancing Script';
 }
 
-.location-container_title-row {
-  padding-top: 12.5em;
+.location-container_logo h1 {
+  margin: 0;
 }
 
-.location-container_title-row h1 {
+.location-container_title {
+  padding: 12.5em 2em 0;
+}
+
+.location-container_title h1 {
   color: #000000;
   font-size: 40px;
   margin-bottom: 10px;
 }
 
-.location-container_title-row p {
+.location-container_title p {
   color: #000000;
   margin-top: 0;
   margin-bottom: 2em;
-  font-size: 14px;
+  font-size: 14.5px;
 }
 
 .location-container_form_input {
@@ -41,18 +49,18 @@
   border: none;
   border-radius: 4px;
   padding: 10px;
-  margin-right: 10px;
+  margin-right: 5px;
   margin-top: 5px;
   outline: 0;
   font-size: 14px;
 }
 
 .location-container_form_button {
-  width: 5em;
+  width: 8em;
   border-radius: 4px;
   padding: 10px;
   border: none;
-  margin-left: 10px;
+  margin-left: 5px;
   margin-top: 5px;
   outline: 0;
   background: #ff1f2d;
@@ -169,4 +177,61 @@
 
 .restaurant-tile_reservations button a:focus {
   outline: 0;
+}
+
+@media screen and (min-width: 932px) and (max-width: 1219px) {
+  .restaurant-tile {
+    width: 25em;
+    margin: 3em 1em 0;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .location-container {
+    background-size: cover;
+    height: 30em;
+  }
+  .location-container_logo {
+    position: static;
+    padding-top: 2em;
+    margin: 0;
+  }
+  .location-container .location-container_title {
+    padding: 6em 2em 0;
+  }
+  .restaurant-tile {
+    width: 20em;
+    margin: 3em 0em 1em;
+  }
+  .restaurant-tile .restaurant-tile_upper {
+    display: block;
+  }
+  .restaurant-tile .restaurant-tile_name h1 {
+    text-align: center;
+    margin-right: 0;
+  }
+  .restaurant-tile .restaurant-dollar-sign-rating {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .restaurant-tile .restaurant-tile_address p b {
+    margin-right: 5px;
+  }
+  .restaurant-tile .restaurant-tile_phone p b {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 487px) {
+  .location-container .location-container_title h1 {
+    font-size: 28px;
+  }
+  .location-container_form .location-container_form_input {
+    display: block;
+    margin: 0 auto 10px;
+  }
+  .restaurant-tile .restaurant-tile_name h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
 }

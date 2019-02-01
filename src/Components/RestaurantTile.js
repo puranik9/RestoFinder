@@ -14,6 +14,7 @@ class RestaurantTile extends Component {
                     <div className="restaurant-tile_name">
                         <h1>{this.props.restaurant.name}</h1>
                         <DollarSignRating price={this.props.restaurant.price}/>
+                        {this.props.restaurant.review_counnt}
                     </div>
                     <img className="restaurant-tile_img" src={this.props.restaurant.image_url} alt="Restaurant Image" />
                 </div>
