@@ -22,7 +22,7 @@ class RestaurantListContainer extends Component {
 
             if(totalHeight <= scrollHeight) {
                 if(this.props.currentPage !== this.props.numPages) {
-                    this.props.onScroll(this.props.currentPage+1);
+                    this.props.infiniteScroll(this.props.currentPage+1);
                 }
             }
         }

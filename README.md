@@ -6,7 +6,7 @@ will be displayed. Please note that OpenTable API fetches data only from North A
 
 ![RestoFinder](./RestoFinderScreenshot.png?raw=true "RestoFinder Screenshot")
 
-## To use the project:
+## To use the application:
 
 ### `npm install`
 

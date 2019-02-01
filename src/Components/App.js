@@ -96,7 +96,7 @@ class App extends Component {
       <div className="App">
         <LocationContainer onSearchSubmit={this.onSearchSubmit}/>
         <RestaurantListContainer results={ this.state.restaurants }
-                                 onScroll={this.onPageTurn}
+                                 infiniteScroll={this.onPageTurn}
                                  currentPage={this.state.pagination.current_page}
                                  numPages={numPages}
                                  showScroll={this.state.showScroll}
