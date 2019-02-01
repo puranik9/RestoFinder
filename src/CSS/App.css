@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+.App {
+  text-align: center;
+  margin-top: -20px;
+  font-family: Oxygen;
+}
+
+.location-container {
+  height: 28em;
+  background: url("../location-container-background.jpg");
+  background-size: 100%;
+  opacity: 0.85;
+}
+
+@media screen and (max-width: 728px) {
+  .location-container {
+    background-size: cover;
+  }
+}
+
+.location-container_title-row {
+  padding-top: 12.5em;
+}
+
+.location-container_title-row h1 {
+  color: #000000;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.location-container_title-row p {
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 2em;
+  font-size: 14px;
+}
+
+.location-container_form_input {
+  width: 20em;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  outline: 0;
+  font-size: 14px;
+}
+
+.location-container_form_button {
+  width: 5em;
+  border-radius: 4px;
+  padding: 10px;
+  border: none;
+  margin-left: 10px;
+  margin-top: 5px;
+  outline: 0;
+  background: #ff1f2d;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.location-container_form_button:hover {
+  opacity: 0.85;
+}
+
+.restaurant-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.restaurant-list_page-number-list {
+  margin-top: 2em;
+}
+
+.restaurant-list_page-number-list span{
+  margin: 10px;
+}
+
+.restaurant-tile {
+  width: 30em;
+  margin: 3em 3em 1em;
+  padding: 2em 1em;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.restaurant-tile_upper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.restaurant-tile_img {
+  border-radius: 2px;
+  width: 150px;
+  height: 150px;
+}
+
+.restaurant-tile_name h1 {
+  display: inline-block;
+  margin-top: 0;
+  margin-right: 1em;
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: Oxygen;
+}
+
+.restaurant-dollar-sign-rating {
+  text-align: left;
+  font-size: 18px;
+}
+
+.restaurant-dollar-sign-rating .highlight {
+  color: #333;
+}
+
+.restaurant-dollar-sign-rating .no-highlight {
+  color: #ddd;
+}
+
+.restaurant-tile_address {
+  text-align: left;
+}
+
+.restaurant-tile_address p {
+  margin-bottom: 0;
+}
+
+.restaurant-tile_address p b {
+  margin-right: 25px;
+}
+
+.restaurant-tile_phone {
+  text-align: left;
+}
+
+.restaurant-tile_phone p b {
+  margin-right: 38px;
+}
+
+.restaurant-tile_reservations {
+  margin-top: 2em;
+}
+
+.restaurant-tile_reservations button {
+  padding: 1em;
+  border-radius: 2px;
+  background: #ff1f2d;
+  outline: 0;
+  border: 0;
+}
+
+.restaurant-tile_reservations button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.restaurant-tile_reservations button:hover {
+  opacity: 0.8;
+}
+
+.restaurant-tile_reservations button a:visited {
+  color: #ffffff;
+}
+
+.restaurant-tile_reservations button a:focus {
+  outline: 0;
+}
