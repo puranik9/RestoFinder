@@ -27,7 +27,6 @@ class DollarSignRating extends Component {
             </div>
         )
     }
-
 }
 
 export default DollarSignRating;
